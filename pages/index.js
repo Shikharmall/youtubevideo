@@ -13,6 +13,7 @@ const Home = () => {
 
   const handleInputChange = (e) => {
     setVideoId(e.target.value);
+    setIsVideo(false);
   };
 
   const handleFetchVideo = async () => {
