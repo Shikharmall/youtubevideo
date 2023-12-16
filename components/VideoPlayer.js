@@ -1,6 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-//import styles from '../styles/styles.module.css';
+import { Card } from 'react-bootstrap'; // Make sure to adjust the path based on your project structure
 
 const VideoPlayer = ({ videoId }) => {
   const opts = {
@@ -11,7 +11,14 @@ const VideoPlayer = ({ videoId }) => {
     },
   };
 
-  return <YouTube videoId={videoId} opts={opts} />;
+  return (
+    <Card className="mb-4">
+      <Card.Body>
+        <YouTube videoId={videoId} opts={opts} />
+      </Card.Body>
+    </Card>
+  );
 };
 
 export default VideoPlayer;
+
