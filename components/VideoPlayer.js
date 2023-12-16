@@ -12,7 +12,7 @@ const VideoPlayer = ({ videoId }) => {
   };
 
   return (
-    <Card className="mb-4">
+    <Card className="mb-4 d-flex justify-content-center align-items-center">
       <Card.Body>
         <YouTube videoId={videoId} opts={opts} />
       </Card.Body>
